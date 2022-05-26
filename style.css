@@ -48,17 +48,23 @@ body {
   display: flex;
 }
 
-ul {
+.incomplete-tasks-list,
+.completed-tasks-list {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-li,
-h3 {
+.incomplete-task,
+.completed-task {
   list-style: none;
 }
 
-input,
+.add-task-block__task,
+.incomplete-task__task,
+.incomplete-task__checkbox,
+.completed-task__task,
+.completed-task__checkbox,
+.add-task-block__btn-add,
 button {
   outline: none;
 }
