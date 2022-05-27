@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -59,11 +59,14 @@ body {
 .tasks-list-item__task,
 .tasks-list-item__checkbox,
 .add-task-block__btn-add,
-button {
+.tasks-list-item__btn-edit,
+.tasks-list-item__btn-delete {
   outline: none;
 }
 
-button {
+.add-task-block__btn-add,
+.tasks-list-item__btn-edit,
+.tasks-list-item__btn-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -73,13 +76,15 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.add-task-block__btn-add:hover,
+.tasks-list-item__btn-edit:hover,
+.tasks-list-item__btn-delete:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-.add-task-block__title {
+.add-task-block__title,
+.tasks__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -119,7 +124,7 @@ h3,
 }
 
 /* Task list */
-li {
+.tasks-list-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -129,7 +134,7 @@ li {
   align-items: center;
 }
 
-li>* {
+.tasks-list-item>* {
   vertical-align: middle;
 }
 
@@ -137,7 +142,7 @@ li>* {
   margin: 0 10px;
 }
 
-li>label {
+.tasks-list-item__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -149,13 +154,13 @@ li>label {
   display: none;
 }
 
-button.btn-delete img {
+.task-btn-delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.btn-delete img:hover {
+.task-btn-delete__img:hover {
   transform: rotateZ(0);
 }
 
